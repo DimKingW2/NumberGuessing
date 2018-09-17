@@ -15,7 +15,7 @@ public class NumberGuessingGame {
 
         keyboard = new Scanner(System.in);
         System.out.println("Would you like to play the number guessing game?");
-        answer =  keyboard.nextLine();
+        answer =  keyboard.nextLine().toLowerCase();
         games = 0;
 
 
@@ -43,13 +43,15 @@ public class NumberGuessingGame {
             System.out.println("It took you " + tries + " tries to guess the number.");
             System.out.println("Would you like to play again? (only type yes or no)");
             answer = keyboard.next();
-            games = games + 1;
+            games += 1;
 
 
 
         }
         if (!answer.equals("yes")) {
             System.out.println("You played a total of " + games + " time(s).");
+            keyboard.close();
+            System.exit(0);
         }
 
 
