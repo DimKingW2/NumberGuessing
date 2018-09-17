@@ -42,7 +42,7 @@ public class NumberGuessingGame {
 
             System.out.println("It took you " + tries + " tries to guess the number.");
             System.out.println("Would you like to play again? (only type yes or no)");
-            answer = keyboard.next();
+            answer = keyboard.next().toLowerCase();
             games += 1;
 
 
