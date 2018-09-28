@@ -17,8 +17,8 @@
       <file leaf-file-name="NumberGuessingGame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/NumberGuessingGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="63" column="106" selection-start-line="63" selection-start-column="106" selection-end-line="63" selection-end-column="106" />
+            <state relative-caret-position="1564">
+              <caret line="92" column="34" selection-start-line="92" selection-start-column="34" selection-end-line="92" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -160,6 +160,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -272,8 +273,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/NumberGuessingGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="63" column="106" selection-start-line="63" selection-start-column="106" selection-end-line="63" selection-end-column="106" />
+        <state relative-caret-position="1564">
+          <caret line="92" column="34" selection-start-line="92" selection-start-column="34" selection-end-line="92" selection-end-column="34" />
         </state>
       </provider>
     </entry>

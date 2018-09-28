@@ -11,6 +11,7 @@ public class NumberGuessingGame {
         String answer;
         String type;
         int maxTries = 0;
+        String dif;
 
 
 
@@ -30,21 +31,70 @@ public class NumberGuessingGame {
              }
             if (type.equals("1")) {
                 pickedNumber = (int) (Math.random() * 100);
-                System.out.println("Guess the number. It is between 1 and 100.");
-                maxTries = 5;
-                System.out.println("You have " + maxTries + " tries to guess the number.");
+                System.out.println("What difficulty would you like? Key: 1 for easy, 2 for medium, 3 for hard.");
+                dif = keyboard.next();
+                while (!dif.equals("1")&&!dif.equals("2")&&!dif.equals("3")) {
+                    System.out.println("Please type only 1, 2, or 3.");
+                    dif = keyboard.next();
+                }
+                if (dif.equals("1")) {
+                    maxTries = 13;
+                    System.out.println("You have " + maxTries + " tries to guess the number.");
+                }
+                if (dif.equals("2")) {
+                    maxTries = 7;
+                    System.out.println("You have " + maxTries + " tries to guess the number.");
+                }
+                if (dif.equals("3")) {
+                    maxTries = 5;
+                    System.out.println("You have " + maxTries + " tries to guess the number.");
+                }
+                System.out.println("Please guess the number.");
             }
             if (type.equals("2")) {
                 pickedNumber = (int) (Math.random() * 1000);
-                System.out.println("Guess the number. It is between 1 and 1000.");
-                maxTries = 11;
-                System.out.println("You have " + maxTries + " tries to guess the number.");
+                System.out.println("What difficulty would you like? Key: 1 for easy, 2 for medium, 3 for hard.");
+                dif = keyboard.next();
+                while (!dif.equals("1")&&!dif.equals("2")&&!dif.equals("3")) {
+                    System.out.println("Please type only 1, 2, or 3.");
+                    dif = keyboard.next();
+                }
+                if (dif.equals("1")) {
+                    maxTries = 20;
+                    System.out.println("You have " + maxTries + " tries to guess the number.");
+                }
+                if (dif.equals("2")) {
+                    maxTries = 13;
+                    System.out.println("You have " + maxTries + " tries to guess the number.");
+                }
+                if (dif.equals("3")) {
+                    maxTries = 8;
+                    System.out.println("You have " + maxTries + " tries to guess the number.");
+                }
+                System.out.println("Please guess the number.");
             }
             if (type.equals("3")) {
                 pickedNumber = (int) (Math.random() * 1000000);
-                System.out.println("Guess the number. It is between 1 and 1000000.");
-                maxTries = 100;
-                System.out.println("You have " + maxTries + " tries to guess the number.");
+                System.out.println("What difficulty would you like? Key: 1 for easy, 2 for medium, 3 for hard.");
+                dif = keyboard.next();
+                while (!dif.equals("1")&&!dif.equals("2")&&!dif.equals("3")) {
+                    System.out.println("Please type only 1, 2, or 3.");
+                    dif = keyboard.next();
+                }
+                if (dif.equals("1")) {
+                    maxTries = 500;
+                    System.out.println("You have " + maxTries + " tries to guess the number.");
+                }
+                if (dif.equals("2")) {
+                    maxTries = 250;
+                    System.out.println("You have " + maxTries + " tries to guess the number.");
+                }
+                if (dif.equals("3")) {
+                    maxTries = 100;
+                    System.out.println("You have " + maxTries + " tries to guess the number.");
+                }
+                System.out.println("Please guess the number.");
+
             }
 
             guessedNumber = keyboard.nextInt();
