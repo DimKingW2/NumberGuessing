@@ -32,16 +32,19 @@ public class NumberGuessingGame {
                 pickedNumber = (int) (Math.random() * 100);
                 System.out.println("Guess the number. It is between 1 and 100.");
                 maxTries = 5;
+                System.out.println("You have " + maxTries + " tries to guess the number.");
             }
             if (type.equals("2")) {
                 pickedNumber = (int) (Math.random() * 1000);
                 System.out.println("Guess the number. It is between 1 and 1000.");
                 maxTries = 11;
+                System.out.println("You have " + maxTries + " tries to guess the number.");
             }
             if (type.equals("3")) {
                 pickedNumber = (int) (Math.random() * 1000000);
                 System.out.println("Guess the number. It is between 1 and 1000000.");
                 maxTries = 100;
+                System.out.println("You have " + maxTries + " tries to guess the number.");
             }
 
             guessedNumber = keyboard.nextInt();
@@ -51,15 +54,18 @@ public class NumberGuessingGame {
                     System.out.println("You did not guess the number.");
                     break;
                 }
+
                 if (guessedNumber > pickedNumber) {
                     System.out.println("Too high");
                 }
                 else  {
                     System.out.println("Too low");
                 }
+                System.out.println("You have " + (maxTries - tries) + " tries left to guess the number.");
                 System.out.println("Try again.");
                 guessedNumber = keyboard.nextInt();
                 tries = tries + 1;
+
 
             }
             if (pickedNumber == guessedNumber){
